@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END MEYERS RESET */
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+
+h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.songcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 0.5px solid rgb(247, 247, 247);
+}
+
+.addsongform {
+  background-color: rgb(168, 168, 168);
+}
+
+.songform {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mysonglist {
+  width: 1000px;
+}
+
+.songcardheader {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  font-size: 20px;
+  font-weight: bolder;
+  width: 950px;
+}
+
+.songcardinfo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.songcardinfo div {
+  width: 300px;
+}
