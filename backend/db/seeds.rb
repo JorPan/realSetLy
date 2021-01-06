@@ -14,5 +14,11 @@ song2 = Song.create(title: "Tequila Flip", key: "F minor", tempo: 85, released: 
 artist1 = Artist.create(name: "Pandasaywhat?!", style: "Funky Electronic", location:"Denver, CO")
 
 track1 = Track.create(artist: artist1, song: song1)
+track2 = Track.create(artist: artist1, song: song2)
+
+show1 = Show.create(date: "May 8, 2020", venue: "Rocky Mountain Virtual", location: "Online stream", price: 0, tixsold: 0)
+
+setlist1 = Setlist.create(song: song1, show: show1), Setlist.create(song: song2, show: show1)
+
 
 binding.pry
