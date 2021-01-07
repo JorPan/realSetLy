@@ -138,3 +138,83 @@ h1 {
   font-weight: bolder;
   margin-left: 1rem;
 }
+
+h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+
+.topnav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10rem;
+}
+.topnav {
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.setbuilder {
+  display: flex;
+}
+
+.setbuilder .leftset {
+  height: 300vh;
+  width: 50%;
+  background-color: rgb(244, 255, 227);
+}
+.setbuilder .rightset {
+  height: 300vh;
+  width: 50%;
+  background-color: rgb(255, 233, 233);
+}
+
+.bodytop {
+  background-color: rgb(235, 235, 235);
+}
+
+.dropzone {
+  font-family: "Poiret One", cursive;
+  height: 50px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(255, 218, 255);
+  margin: 1rem;
+}
+
+.addrowbutton {
+  font-family: "Poiret One", cursive;
+  margin: 1rem;
+}
+
+.removerowbutton {
+  font-family: "Poiret One", cursive;
+  margin: 1rem;
+}
+
+.song {
+  font-family: "Poiret One", cursive;
+  height: 45px;
+  width: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(234, 241, 255);
+  margin: 1rem;
+}
+
+p {
+  width: 200px;
+}
