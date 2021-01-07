@@ -9,7 +9,15 @@
 require "pry"
 
 song1 = Song.create(title: "Swagger Wagon", key: "D minor", tempo: 85, released: true, album: "Swagger Wagon", year: 2018)
-song2 = Song.create(title: "Tequila Flip", key: "F minor", tempo: 85, released: false, album: "N/A", year: 2019)
+song2 = Song.create(title: "Tequila Flip", key: "F minor", tempo: 85, released: false, album: "N/A", year: 2020)
+song3 = Song.create(title: "I Need U", key: "E minor", tempo: 150, released: false, album: "N/A", year: 2019)
+song4 = Song.create(title: "Hybrid Hover Craft", key: "E minor", tempo: 80, released: true, album: "Hybrid Hover Craft", year: 2020)
+song5 = Song.create(title: "Look What You've Done", key: "G minor", tempo: 87, released: false, album: "N/A", year: 2020)
+song6 = Song.create(title: "Area Codes Flip", key: "A minor", tempo: 100, released: false, album: "N/A", year: 2019)
+song7 = Song.create(title: "Hey Arnold Flip", key: "C minor", tempo: 75, released: false, album: "N/A", year: 2020)
+song8 = Song.create(title: "Scenic Route", key: "D minor", tempo: 114, released: false, album: "N/A", year: 2020)
+song9 = Song.create(title: "Take It Slow Flip", key: "D minor", tempo: 114, released: false, album: "N/A", year: 2020)
+song10 = Song.create(title: "Sherman St. Shuffle", key: "E minor", tempo: 83, released: false, album: "N/A", year: 2020)
 
 artist1 = Artist.create(name: "Pandasaywhat?!", style: "Funky Electronic", location:"Denver, CO")
 
