@@ -29,12 +29,10 @@ function removeRow(event) {
 fetch("http://localhost:3000/songs")
   .then((response) => response.json())
   .then((songs) => {
-    songs.forEach((song) => {
+    songs.forEach((song, index) => {
       let songDiv = document.createElement("div");
       songDiv.draggable = true;
-      // songDiv.dataset.orderId = index;
-
-      setSongDivDragEvents(songDiv);
+      songDiv.dataset.orderId = index;
       let mySongs = document.querySelector(".mysongs");
       songDiv.classList.add("song");
       let titleDiv = document.createElement("div");
@@ -54,31 +52,51 @@ fetch("http://localhost:3000/songs")
     });
   });
 
-function setSongDivDragEvents(songDiv) {
-  songDiv.addEventListener("drag", (event) => {
-    const dragCard = event.target;
-  });
-  songDiv.addEventListener("dragstart", (event) => {
-    const dragCard = event.target;
-    dragCard.classList.add("dragging");
-  });
-  songDiv.addEventListener("dragend", (event) => {
-    const dragCard = event.target;
-    dragCard.classList.remove("dragging");
-  });
-  document.body.addEventListener("dragover", (event) => {
-    event.preventDefault();
-    if (event.target.classList.contains("dropzone")) {
-      event.target.classList.add("droppable");
-    }
-  });
-  document.body.addEventListener("dragleave", (event) => {
-    if (event.target.classList.contains("dropzone")) {
-      event.target.classList.remove("droppable");
-    }
-  });
-  document.body.addEventListener("drop", (event) => {
-    console.log(event.target);
-    event.target.append(songDiv);
-  });
-}
+// function setDragAndDropEvents() {
+let dragged;
+
+document.addEventListener("drag", (event) => {});
+
+document.addEventListener("dragstart", (event) => {
+  dragged = event.target;
+  const dragCard = event.target;
+  dragCard.classList.add("dragging");
+});
+
+document.addEventListener("dragend", (event) => {
+  dragged.classList.remove("dragging");
+});
+
+document.body.addEventListener("dragover", (event) => {
+  event.preventDefault();
+});
+
+document.body.addEventListener("dragenter", (event) => {
+  event.preventDefault();
+  if (event.target.classList.contains("dropzone")) {
+    event.target.classList.add("droppable");
+  }
+});
+
+document.body.addEventListener("dragleave", (event) => {
+  if (event.target.classList.contains("dropzone")) {
+    event.target.classList.remove("droppable");
+  }
+});
+
+document.body.addEventListener("drop", (event) => {
+  event.preventDefault();
+
+  const dropzone = event.target;
+
+  if (dropzone.classList.contains("dropzone")) {
+    dropzone.classList.remove("droppable");
+    dragged.remove();
+    dropzone.append(dragged);
+
+    const positionElement = dropzone.querySelector("span");
+    const positionNumber = positionElement.textContent;
+    dragged.dataset.position = positionNumber;
+  }
+});
+// }
