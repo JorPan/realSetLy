@@ -164,6 +164,19 @@ h2 {
   padding-bottom: 1rem;
 }
 
+.bodytop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.camelot {
+  height: 100px;
+}
+
+.camelotbig {
+  height: 500px;
+}
+
 .setbuilder {
   display: flex;
 }
@@ -186,7 +199,7 @@ h2 {
 .dropzone {
   font-family: "Poiret One", cursive;
   height: 50px;
-  width: 600px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -204,6 +217,14 @@ h2 {
   margin: 1rem;
 }
 
+.savebutton {
+  font-family: "Poiret One", cursive;
+  margin: 1rem;
+  font-size: 20px;
+  margin-left: 350px;
+  font-weight: bolder;
+}
+
 .song {
   font-family: "Poiret One", cursive;
   height: 45px;
@@ -213,8 +234,26 @@ h2 {
   justify-content: space-between;
   background-color: rgb(234, 241, 255);
   margin: 1rem;
+  cursor: move;
+  cursor: grab;
+}
+
+.song:active {
+  cursor: grabbing;
+}
+
+.grabbing {
+  cursor: grabbing;
 }
 
 p {
   width: 200px;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.droppable {
+  background-color: rgb(255, 233, 191);
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SetLy</title>
-    <script defer src="songs.js"></script>
-    <link rel="stylesheet" href="songs.css" />
+    <script defer src="show.js"></script>
+    <link rel="stylesheet" href="show.css" />
   </head>
   <body>
     <div class="topnav">
@@ -28,8 +28,8 @@
     </div>
     <section class="bodytop"></section>
     <section class="addsongform">
-      <h2>Add a Song</h2>
-      <form class="songform">
+      <h2>Edit Song</h2>
+      <form class="editform">
         <label for="title">Title</label>
         <input type="text" name="title" id="title" />
         <label for="key">Key</label>
@@ -42,20 +42,8 @@
         <input type="text" name="album" id="album" />
         <label for="year">Year Produced</label>
         <input type="number" name="year" id="year" />
-        <input type="submit" value="Add song" class="submit" />
+        <input type="submit" value="Submit Edits" class="submit" />
       </form>
-    </section>
-    <section class="mysongs">
-      <h3>My Songs</h3>
-      <ul class="mysonglist">
-        <li class="songcardheader">
-          <div><p>Title</p></div>
-          <div><p>Key</p></div>
-          <div><p>Tempo</p></div>
-          <div><p>Edit</p></div>
-          <div><p>Delete</p></div>
-        </li>
-      </ul>
     </section>
   </body>
 </html>

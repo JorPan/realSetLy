@@ -17,6 +17,19 @@ class SongsController < ApplicationController
         render json: @songs
     end
 
+    def update
+        @song = Song.find(params[:id])
+        @song.update(
+            title: params[:title],
+            key: params[:key],
+            tempo: params[:tempo],
+            released: params[:released],
+            album: params[:album],
+            year: params[:year],
+        )
+        render json: @song
+    end
+
     def show
         @song = Song.find(params[:id])
         render json: @song
