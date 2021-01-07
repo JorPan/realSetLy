@@ -1,7 +1,7 @@
 class SetlistsController < ApplicationController
     def index
         @setlists = Setlist.all
-        render json: @setlists
+        render json: @setlists, include: :song
     end
 
     def show 
