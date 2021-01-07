@@ -14,10 +14,11 @@ fetch(url)
     titleInput.value = song.title;
     keyInput.value = song.key;
     tempoInput.value = song.tempo;
-    releasedInput.value = song.released;
     albumInput.value = song.album;
     yearInput.value = song.year;
-    console.log(titleInput.value);
+    if (song.released == true) {
+      releasedInput.checked = true;
+    }
   });
 
 let editForm = document.querySelector(".editform");
