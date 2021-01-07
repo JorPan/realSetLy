@@ -171,16 +171,16 @@ h2 {
 .setbuilder .leftset {
   height: 300vh;
   width: 50%;
-  background-color: rgb(244, 255, 227);
+  background-color: #d7faf4;
 }
 .setbuilder .rightset {
   height: 300vh;
   width: 50%;
-  background-color: rgb(255, 233, 233);
+  background-color: #cee8f0;
 }
 
 .bodytop {
-  background-color: rgb(235, 235, 235);
+  background-color: #cee3d7;
 }
 
 .dropzone {
@@ -190,7 +190,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(255, 218, 255);
+  background-color: #deffd6;
   margin: 1rem;
 }
 
