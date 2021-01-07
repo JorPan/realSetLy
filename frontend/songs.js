@@ -12,9 +12,13 @@ fetch(songsURL)
       div.classList.add("songcard");
       let deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete Song";
+      let editButton = document.createElement("button");
+      editButton.textContent = "Edit Song";
       let titleDiv = document.createElement("div");
       let keyDiv = document.createElement("div");
       let tempoDiv = document.createElement("div");
+      let editDiv = document.createElement("div");
+      let deleteDiv = document.createElement("div");
       let titlep = document.createElement("p");
       let keyp = document.createElement("p");
       let tempop = document.createElement("p");
@@ -24,7 +28,9 @@ fetch(songsURL)
       titleDiv.append(titlep);
       keyDiv.append(keyp);
       tempoDiv.append(tempop);
-      li.append(titleDiv, keyDiv, tempoDiv, deleteButton);
+      editDiv.append(editButton);
+      deleteDiv.append(deleteButton);
+      li.append(titleDiv, keyDiv, tempoDiv, editDiv, deleteDiv);
       div.append(li);
       songList.append(div);
 
@@ -36,6 +42,12 @@ fetch(songsURL)
         fetch(`${songsURL}/${id}`, {
           method: "DELETE",
         });
+      }
+
+      editButton.addEventListener("click", editSong);
+
+      function editSong(e) {
+        window.location.replace(`/show.html?id=${song.id}`);
       }
     });
   });
@@ -54,7 +66,9 @@ newSongForm.addEventListener("submit", (event) => {
   li.style = "list-style: none";
   li.classList.add("songcardinfo");
   div.classList.add("songcard");
+  let editButton = document.createElement("button");
   let deleteButton = document.createElement("button");
+  editButton.textContent = "Edit Song";
   deleteButton.textContent = "Delete Song";
   let titleDiv = document.createElement("div");
   let keyDiv = document.createElement("div");
@@ -68,7 +82,7 @@ newSongForm.addEventListener("submit", (event) => {
   titleDiv.append(titlep);
   keyDiv.append(keyp);
   tempoDiv.append(tempop);
-  li.append(titleDiv, keyDiv, tempoDiv, deleteButton);
+  li.append(titleDiv, keyDiv, tempoDiv, editButton, deleteButton);
   div.append(li);
   songList.append(div);
   fetch(songsURL, {
