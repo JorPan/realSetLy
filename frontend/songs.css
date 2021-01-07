@@ -132,11 +132,37 @@ table {
 
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
-h2 {
+h1 {
   font-family: "Poiret One", cursive;
   font-size: 50px;
   font-weight: bolder;
   margin-left: 1rem;
+}
+
+h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+.topnav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10rem;
+}
+.topnav {
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -156,7 +182,7 @@ h3 {
 }
 
 .addsongform {
-  background-color: rgb(168, 168, 168);
+  background-color: rgb(228, 228, 228);
 }
 
 .songform {
