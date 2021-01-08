@@ -18,6 +18,7 @@ song7 = Song.create(title: "Hey Arnold Flip", key: "C minor", tempo: 75, release
 song8 = Song.create(title: "Scenic Route", key: "D minor", tempo: 114, released: false, album: "N/A", year: 2020)
 song9 = Song.create(title: "Take It Slow Flip", key: "D minor", tempo: 114, released: false, album: "N/A", year: 2020)
 song10 = Song.create(title: "Sherman St. Shuffle", key: "E minor", tempo: 83, released: false, album: "N/A", year: 2020)
+song11 = Song.create(title: "Cabin Fever", key: "D minor", tempo: 90, released: false, album: "N/A", year: 2020)
 
 artist1 = Artist.create(name: "Pandasaywhat?!", style: "Funky Electronic", location:"Denver, CO")
 
@@ -27,7 +28,8 @@ track2 = Track.create(artist: artist1, song: song2)
 show1 = Show.create(date: "May 8, 2020", venue: "Rocky Mountain Virtual", location: "Online stream", price: 0, tixsold: 0)
 show2 = Show.create(date: "Dec 31, 2017", venue: "Your Mom's House", location: "Denver, CO", price: 20, tixsold: 120)
 
-setlist1 = Setlist.create(song: song1, show: show1), Setlist.create(song: song2, show: show1)
+setlist1 = Setlist.create(song: song11, show: show1, position: 1), Setlist.create(song: song1, show: show1, position: 2), Setlist.create(song: song2, show: show1, position: 3)
 
 
-binding.pry
+binding.pry 
+

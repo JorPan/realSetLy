@@ -32,7 +32,7 @@ fetch("http://localhost:3000/songs")
     songs.forEach((song, index) => {
       let songDiv = document.createElement("div");
       songDiv.draggable = true;
-      songDiv.dataset.orderId = index;
+      songDiv.dataset.position = index;
       let mySongs = document.querySelector(".mysongs");
       songDiv.classList.add("song");
       let titleDiv = document.createElement("div");
@@ -59,8 +59,7 @@ document.addEventListener("drag", (event) => {});
 
 document.addEventListener("dragstart", (event) => {
   dragged = event.target;
-  const dragCard = event.target;
-  dragCard.classList.add("dragging");
+  dragged.classList.add("dragging");
 });
 
 document.addEventListener("dragend", (event) => {
@@ -76,10 +75,16 @@ document.body.addEventListener("dragenter", (event) => {
   if (event.target.classList.contains("dropzone")) {
     event.target.classList.add("droppable");
   }
+  if (event.target.classList.contains("dropzoneright")) {
+    event.target.classList.add("droppable");
+  }
 });
 
 document.body.addEventListener("dragleave", (event) => {
   if (event.target.classList.contains("dropzone")) {
+    event.target.classList.remove("droppable");
+  }
+  if (event.target.classList.contains("dropzoneright")) {
     event.target.classList.remove("droppable");
   }
 });
@@ -98,5 +103,30 @@ document.body.addEventListener("drop", (event) => {
     const positionNumber = positionElement.textContent;
     dragged.dataset.position = positionNumber;
   }
+
+  if (dropzone.classList.contains("dropzoneright")) {
+    dropzone.classList.remove("droppable");
+    dragged.remove();
+    dropzone.append(dragged);
+
+    dragged.dataset.position = null;
+  }
 });
 // }
+
+const saveButton = document.querySelector(".savebutton");
+
+saveButton.addEventListener("click", (event) => {
+  fetch("http://localhost:3000/setlists", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      song: "1",
+      show: "1",
+      position: "1",
+    }),
+  });
+});
