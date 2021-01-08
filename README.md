@@ -113,6 +113,7 @@ This app is still under construction. Concert-Goers do not yet have access to ma
 - Auth with different user models for Artists and Concert-Goers.
 - 7 way Many-to-Many relationship.
 - Drag and Drop functionality & saving setlists with correct song order data. 
+- Finishing all features in less than 4 days. 
 
 
 ## Contact
