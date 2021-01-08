@@ -34,6 +34,8 @@ As an avid concert goer, I always thought it would be cool to track my shows and
 
 Once logged in, Artist Users will be able to access and manage their personal song library in the "My Songs" tab at the top. From the "Make a New Set" tab, they will see their full song library, and can drag and drop their songs into a setlist that they can save and edit in the future. Once the show happens, they will be prompted to fill out show data including ticket sales and revenue(kept private on their end), and save the show and setlist to the database for concert goers to see.
 
+![Build a Set Feature](https://i.imgur.com/JILMtmK.png)
+
 For Concert Goer's, they will see a "Set Library" tab where they can browse through uploaded setlists, select and track the show's they've attended, and share shows and setlists with friends. From the "My Show Data" tab, they will be shown data on their concert history, including how many times they've seen specific artists, and specific songs by those artists.
 
 ## Code Example
