@@ -208,6 +208,25 @@ h2 {
   margin-top: 1rem;
 }
 
+.dropzoneright {
+  position: relative;
+  font-family: "Poiret One", cursive;
+  height: 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d6f3ff;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  margin: 1rem;
+}
+
 .dropzone > span {
   position: absolute;
   top: 0;
@@ -240,7 +259,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(234, 241, 255);
-  margin: 1rem;
+  margin: 0.5rem;
   margin-left: 2rem;
   cursor: move;
   cursor: grab;

@@ -157,11 +157,16 @@ h1 {
   padding-bottom: 1rem;
 }
 
+.bodytop {
+  background-color: rgb(231, 231, 231);
+}
+
 .showcard {
   font-family: "Poiret One", cursive;
   width: 200px;
   border: 0.5px solid black;
   padding: 2rem;
+  margin: 1rem;
 }
 
 .showcard:hover {

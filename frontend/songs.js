@@ -73,6 +73,8 @@ newSongForm.addEventListener("submit", (event) => {
   let titleDiv = document.createElement("div");
   let keyDiv = document.createElement("div");
   let tempoDiv = document.createElement("div");
+  let editDiv = document.createElement("div");
+  let deleteDiv = document.createElement("div");
   let titlep = document.createElement("p");
   let keyp = document.createElement("p");
   let tempop = document.createElement("p");
@@ -82,7 +84,9 @@ newSongForm.addEventListener("submit", (event) => {
   titleDiv.append(titlep);
   keyDiv.append(keyp);
   tempoDiv.append(tempop);
-  li.append(titleDiv, keyDiv, tempoDiv, editButton, deleteButton);
+  editDiv.append(editButton);
+  deleteDiv.append(deleteButton);
+  li.append(titleDiv, keyDiv, tempoDiv, editDiv, deleteDiv);
   div.append(li);
   songList.append(div);
   fetch(songsURL, {
