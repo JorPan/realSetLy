@@ -108,6 +108,13 @@ document.body.addEventListener("drop", (event) => {
 
 This app is still under construction. Concert-Goers do not yet have access to main features, as the show library is very minimal. I will be continuing the development of this app to complete all functionality for both Artist Users (musicians) as well as End Users (concert-goers). My personal music project - Pandasaywhat?! will pilot the app by suppying full show data to begin growing the song and show library.
 
+## Challenges 
+
+Finishing Auth with different user models for Artists and Concert-Goers.
+7 way Many-to-Many relationship.
+Drag and Drop functionality & saving setlists with correct song order data. 
+
+
 ## Contact
 
 [Linkedin](https://www.linkedin.com/in/jordan-panasewicz-77a93158/) Jordan Panasewicz
