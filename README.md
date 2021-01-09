@@ -21,7 +21,7 @@ As an avid concert goer, I always thought it would be cool to track my shows and
 💻Active Record <br />
 
 ## Demo Video
-(https://www.youtube.com/watch?v=T71Ynuger6M&feature=youtu.be)
+[SetLy Demo Video](https://www.youtube.com/watch?v=T71Ynuger6M&feature=youtu.be)
 
 ## Setup
 
